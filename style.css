@@ -1,0 +1,126 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #ffa500;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+#services {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#services h1 {
+    font-family: 'Moon Dance', cursive;
+    font-size: 60px;
+    color: #ffa500;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 40px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-family: 'Sniglet', sans-serif;
+    font-size: 18px;
+    color: #333;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.dom{
+    color: red;
+}
+
+footer {
+    background-color: #ffa500;
+    padding: 10px 50px;
+    text-align: center;
+    color: white;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li {
+    display: inline;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #000;
+}
+
+footer p {
+    margin: 10px 0;
+}
