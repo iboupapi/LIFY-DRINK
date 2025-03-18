@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/commande.css">
+    <title>Commander | LIFY DRINK</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Passer une commande</h2>
+
+        <form action="commande.php" method="post">
+            <div id="client">
+                <label for="name">Nom Complet</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="adresse">Adresse</label>
+                <input type="text" name="adresse" id="adresse" required>
+
+                <label for="tel">Téléphone</label>
+                <input type="text" name="tel" id="tel" required>
+            </div>
+
+            <h3>Choix des jus</h3>
+
+            <div id="jus-container">
+                <!-- Un seul bloc de jus par défaut -->
+                <div class="jus-block">
+                    <label for="jus">Jus</label>
+                    <select name="jus[]" class="jus">
+                        <option value=''>---------</option>
+                        <option value="Bissap">Bissap</option>
+                        <option value="Bouye">Bouye</option>
+                        <option value="Gingembre">Gingembre</option>
+                    </select>
+
+                    <label for="quantity">Quantité</label>
+                    <input type="number" value="1" name="quantity[]" class="quantity" min="1">
+
+                    <label for="taille">Taille</label>
+                    <select name="taille[]" class="taille">
+                        <option value=''>-------</option>
+                        <option value="250cl" data-price="300">250cl</option>
+                        <option value="1000ml" data-price="1000">1L</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="button" id="addJus">+ Ajouter un jus</button>
+
+            <p>Prix Total : <span id="prix">0</span> FCFA</p>
+
+            <input type="submit" value="Confirmer">
+        </form>
+    </div>
+
+    <script src="commande.js"></script>
+</body>
+</html>
